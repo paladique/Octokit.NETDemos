@@ -24,7 +24,6 @@ namespace Octokit.NETDemos
         {
             User githubUser = await client.User.Get("paladique");
             IReadOnlyList<Repository> gitubUserRepos = await client.Repository.GetAllForUser(githubUser.Login);
-
             foreach (Repository r in gitubUserRepos)
             {
                 Console.WriteLine(r.Name);

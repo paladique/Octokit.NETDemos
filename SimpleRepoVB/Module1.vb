@@ -5,8 +5,6 @@ Module Module1
     Sub Main()
         Dim ghClient = New GitHubClient(New ProductHeaderValue("Octokit-Test"))
         Dim Task As Task = New Task(Sub() ListUserRepos(ghClient))
-
-
         Task.Start()
         Task.Wait()
         Console.ReadLine()

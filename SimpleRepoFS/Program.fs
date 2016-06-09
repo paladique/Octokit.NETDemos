@@ -7,7 +7,7 @@ open Octokit
 let main argv = 
     let client = GitHubClient(new ProductHeaderValue("Octokit-Test"))
 
-//    let task (t: Task) = t.ContinueWith (fun listUserRepos -> ()) |> Async.AwaitTask
+    let task (t: Task) = t.ContinueWith (fun listUserRepos -> ()) |> Async.AwaitTask
 //
 //    let ListUserRepos client = await (client.User.Get("paladique"))
 //

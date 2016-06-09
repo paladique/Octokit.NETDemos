@@ -16,8 +16,7 @@ namespace SimpleMarkdownCS
         }
 
         private async Task RenderTheMarkdown(GitHubClient client)
-        {
-            
+        {            
             NewArbitraryMarkdown mkd = new NewArbitraryMarkdown(txtMkd.Text);
             string renderedMkd =  await client.Miscellaneous.RenderArbitraryMarkdown(mkd);
 

@@ -15,9 +15,7 @@ namespace Octokit.NETDemos
             var ghClient = new GitHubClient(new ProductHeaderValue("Octokit-Test"));
             Task task = new Task(() => ListUserRepos(ghClient));
             task.Start();
-            task.Wait();
             Console.ReadLine();
-
         }
 
         private static async void ListUserRepos(GitHubClient client)

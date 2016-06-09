@@ -23,10 +23,8 @@ Public Class _Default
     End Function
 
     Protected Async Sub Unnamed2_Click(sender As Object, e As EventArgs)
-
         Dim ghClient = New GitHubClient(New ProductHeaderValue("Octokit-Test"))
         Await RenderTheMarkdown(ghClient)
-
     End Sub
 
 End Class

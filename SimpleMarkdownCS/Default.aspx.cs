@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using Octokit;
 using System.Threading.Tasks;
 
@@ -24,7 +19,7 @@ namespace SimpleMarkdownCS
 
         }
 
-        protected async void Unnamed2_Click(object sender, EventArgs e)
+        protected async Task Unnamed2_Click(object sender, EventArgs e)
         {
             var ghClient = new GitHubClient(new ProductHeaderValue("Octokit-Test"));
             

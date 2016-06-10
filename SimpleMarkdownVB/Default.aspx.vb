@@ -1,10 +1,4 @@
-﻿Imports System
-Imports System.Collections.Generic
-Imports System.Linq
-Imports System.Web
-Imports System.Web.UI
-Imports System.Web.UI.WebControls
-Imports Octokit
+﻿Imports Octokit
 Imports System.Threading.Tasks
 
 Public Class _Default
@@ -22,9 +16,9 @@ Public Class _Default
 
     End Function
 
-    Protected Async Sub Unnamed2_Click(sender As Object, e As EventArgs)
+    Protected Async Function Unnamed2_Click(sender As Object, e As EventArgs) As Task
         Dim ghClient = New GitHubClient(New ProductHeaderValue("Octokit-Test"))
         Await RenderTheMarkdown(ghClient)
-    End Sub
+    End Function
 
 End Class
